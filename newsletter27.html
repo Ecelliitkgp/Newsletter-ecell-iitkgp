@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: inherit !important;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		p {
+			line-height: inherit
+		}
+
+		@media (max-width:670px) {
+			.row-content {
+				width: 100% !important;
+			}
+
+			.stack .column {
+				width: 100%;
+				display: block;
+			}
+		}
+	</style>
+</head>
+
+<body style="background-color: #FFFFFF; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+	<table class="nl-container" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;">
+		<tbody>
+			<tr>
+				<td>
+					<table class="row row-1" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;padding-bottom:5px;">
+																<div align="center" style="line-height:10px"><img src="data:image/png;base64,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" style="display: block; height: auto; border: 0; width: 325px; max-width: 100%;" width="325"></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;padding-bottom:5px;">
+																<div align="center" style="line-height:10px"><img src="https://ecelliitkgp.github.io/Newsletter-ecell-iitkgp/KGPSCP%20long%20logo.png" style="display: block; height: auto; border: 0; width: 195px; max-width: 100%;" width="195"></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-2" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;">
+																<div align="center" style="line-height:10px"><img src="https://ecelliitkgp.github.io/Newsletter-ecell-iitkgp/Screenshot%20(249).png" style="display: block; height: auto; border: 0; width: 528px; max-width: 100%;" width="528"></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-3" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 16.8px; color: #393d47; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center;"><span style="font-size:34px;color:#71369e;"><strong>Week's Prime</strong></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-4" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; text-align: center; mso-line-height-alt: 21px; color: #393d47; line-height: 1.5; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; mso-line-height-alt: 27px;"><span style="font-size:18px;color:#000000;"><strong>How India is Promoting startups in this new age</strong></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-5" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;">
+																<div align="center" style="line-height:10px"><img src="https://static1.s123-cdn-static-a.com/uploads/4173343/800_5feeff5243415.png" style="display: block; height: auto; border: 0; width: 423px; max-width: 100%;" width="423"></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-6" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 21px; color: #393d47; line-height: 1.5; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 16px; text-align: justify; mso-line-height-alt: 24px;"><span style="font-size:16px;color:#000000;">To boost the innovation, entrepreneurship, and startup ecosystem, the government is focused on three aspects: "freeing entrepreneurship and innovation from government and bureaucratic silos; putting up institutional structures to foster innovation and handholding of youth innovators."</span></p>
+																		<p style="margin: 0; font-size: 16px; text-align: justify; mso-line-height-alt: 24px;"><span style="font-size:16px;color:#000000;">The government in the previous year has granted 28,000 patents. The government's help and support have also placed India in a better position in the Global Innovation Index and now stands at 46. Not only that, due to the growing startup ecosystem in India, job opportunity has increased manifold. There is now a greater demand for Engineers, Accountants, Management students than ever. Several Indian Grants and resources for Indian Startups are available in <span style="color:#0e48b4;"><a href="https://www.startupindia.gov.in/" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">https://www.startupindia.gov.in/</a></span>. Have a look at the website.&nbsp;</span></p>
+																		<p style="margin: 0; font-size: 16px; text-align: justify; mso-line-height-alt: 24px;"><span style="font-size:16px;color:#0e48b4;"><a href="https://www.businesstoday.in/entrepreneurship/story/start-ups-are-backbone-of-new-india-says-pm-modi-319210-2022-01-15" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">Read More</a></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-7" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="button_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td>
+																<div align="center">
+																	<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.ecell-iitkgp.org/subscribe.php" style="height:44px;width:115px;v-text-anchor:middle;" arcsize="10%" strokeweight="0.75pt" strokecolor="#8a3b8f" fillcolor="#71369e"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:16px"><![endif]--><a href="https://www.ecell-iitkgp.org/subscribe.php" target="_blank" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#71369e;border-radius:4px;width:auto;border-top:1px solid #8a3b8f;border-right:1px solid #8a3b8f;border-bottom:1px solid #8a3b8f;border-left:1px solid #8a3b8f;padding-top:5px;padding-bottom:5px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;"><span style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;"><span style="font-size: 16px; line-height: 2; word-break: break-word; mso-line-height-alt: 32px;">Subscribe</span></span></a>
+																	<!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-8" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 16.8px; color: #393d47; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center;"><span style="font-size:34px;color:#71369e;"><strong>Crisps</strong></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-9" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;">
+																<div align="center" style="line-height:10px"><img src="https://www.omidyarnetwork.in/wp-content/uploads/2019/10/Dealshare-logo-1.png" style="display: block; height: auto; border: 0; width: 81px; max-width: 100%;" width="81" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:10px;padding-left:15px;padding-right:15px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;">DealShare, a social commerce startup focused on groceries and basics, has secured $165 million in its Series E round, putting it in the exclusive club of unicorns. This is the fifth Indian unicorn of the year. Jaipur-based DealShare is an inventory-driven platform that helps large cities manage their supply chains and logistics. It currently operates in ten states and over 100 cities, with plans to grow to twenty states and 300 cities and towns and targets the middle-income demographic through a community group buying model. The money raised in this round will be used to invest in technology and data science, as well as a ten-fold expansion of the company's logistics infrastructure and geographic reach. In addition, a large offline retail franchise network will be established.</span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="button_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:10px;text-align:center;">
+																<div align="center">
+																	<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://timesofindia.indiatimes.com/business/india-business/dealshare-raises-165-million-at-1-6-billion-valuation/articleshow/89196983.cms" style="height:15px;width:104px;v-text-anchor:middle;" arcsize="27%" stroke="false" fillcolor="#4f87ab"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:13px"><![endif]--><a href="https://timesofindia.indiatimes.com/business/india-business/dealshare-raises-165-million-at-1-6-billion-valuation/articleshow/89196983.cms" target="_blank" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#4f87ab;border-radius:4px;width:auto;border-top:1px solid #4f87ab;border-right:1px solid #4f87ab;border-bottom:1px solid #4f87ab;border-left:1px solid #4f87ab;padding-top:0px;padding-bottom:0px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;"><span style="padding-left:20px;padding-right:20px;font-size:13px;display:inline-block;letter-spacing:normal;"><span style="font-size: 12px; line-height: 1.2; word-break: break-word; mso-line-height-alt: 14px;"><span style="font-size: 13px; line-height: 15px;" data-mce-style="font-size: 13px; line-height: 15px;">Read More</span></span></span></a>
+																	<!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;">
+																<div align="center" style="line-height:10px"><img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_367cbd1c10ce25f44c5668f622c7c4fd/darwinbox.jpg" style="display: block; height: auto; border: 0; width: 146px; max-width: 100%;" width="146" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:10px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left; mso-line-height-alt: 21px;"><span style="font-size:14px;color:#000000;">Darwinbox, an HR tech platform, has more than tripled its valuation in a fresh $72 million fundraising round, making it a unicorn. It is the 84th Indian startup to be accepted into this elite group and the fourth so far this year. Darwinbox helps organisations manage their human resource needs—such as hiring and on-boarding, touchless attendance and employee management—digitally. It operates a cloud-based human resource management platform. Hundreds of firms, including Starbucks, Tokopedia, Zilingo and Kotak use the startup’s platform to handle onboarding of new hires and gaining visibility on their performance, attrition rates and establishing an ongoing feedback loop. </span><span style="font-size:14px;color:#000000;">The new funding follows a year of strong growth for Darwinbox.The company anticipates a 100% increase in its team and is preparing to enter the US market later this year.</span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="button_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:10px;text-align:center;">
+																<div align="center">
+																	<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.livemint.com/companies/news/this-hyderabad-based-company-becomes-rare-asian-software-unicorn-11643085374433.html" style="height:19px;width:104px;v-text-anchor:middle;" arcsize="22%" stroke="false" fillcolor="#4f87ab"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:13px"><![endif]--><a href="https://www.livemint.com/companies/news/this-hyderabad-based-company-becomes-rare-asian-software-unicorn-11643085374433.html" target="_blank" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#4f87ab;border-radius:4px;width:auto;border-top:1px solid #4f87ab;border-right:1px solid #4f87ab;border-bottom:1px solid #4f87ab;border-left:1px solid #4f87ab;padding-top:0px;padding-bottom:0px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;"><span style="padding-left:20px;padding-right:20px;font-size:13px;display:inline-block;letter-spacing:normal;"><span style="font-size: 16px; margin: 0; line-height: 1.2; word-break: break-word; mso-line-height-alt: 19px;"><span style="font-size: 13px; line-height: 15px;" data-mce-style="font-size: 13px; line-height: 15px;">Read More</span></span></span></a>
+																	<!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-10" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;">
+																<div align="center" style="line-height:10px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/800px-Zomato_logo.png" style="display: block; height: auto; border: 0; width: 81px; max-width: 100%;" width="81" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:5px;padding-left:15px;padding-right:15px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;">Zomato Ltd, the food delivery service, announced on Friday that it will establish a wholly-owned non-banking financial corporation (NBFC) and invest in two startups. The NBFC's proposed paid-up capital is Rs 3 crore, while its allowed capital is Rs 10 crore. The wholly-owned subsidiary will need Reserve Bank of India’s approval to carry on the financial services business. The two investments, as well as the NBFC proposal, come at a time when many shareholders are concerned about new-age technology businesses like Zomato's viability.</span></p>
+																		<p style="margin: 0; font-size: 14px; text-align: left; mso-line-height-alt: 18px;">&nbsp;</p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="button_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:10px;text-align:center;">
+																<div align="center">
+																	<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.business-standard.com/article/companies/zomato-to-form-non-banking-finance-company-to-enter-financial-services-biz-122012800725_1.html" style="height:24px;width:111px;v-text-anchor:middle;" arcsize="17%" stroke="false" fillcolor="#4f87ab"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:13px"><![endif]--><a href="https://www.business-standard.com/article/companies/zomato-to-form-non-banking-finance-company-to-enter-financial-services-biz-122012800725_1.html" target="_blank" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#4f87ab;border-radius:4px;width:auto;border-top:1px solid #4f87ab;border-right:1px solid #4f87ab;border-bottom:1px solid #4f87ab;border-left:1px solid #4f87ab;padding-top:0px;padding-bottom:0px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;"><span style="padding-left:20px;padding-right:20px;font-size:13px;display:inline-block;letter-spacing:normal;"><span style="font-size: 16px; margin: 0; line-height: 1.5; word-break: break-word; mso-line-height-alt: 24px;"><span style="font-size: 13px; line-height: 19px;" data-mce-style="font-size: 13px; line-height: 19px;">&nbsp;Read More&nbsp;</span></span></span></a>
+																	<!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;">
+																<div align="center" style="line-height:10px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ZHaukIaXDtHfz12a8fdTlLNIcQFjB3rbIvarKRGuTpJqBVqt0ps0WgcyYMOrIovFUQM&usqp=CAU" style="display: block; height: auto; border: 0; width: 130px; max-width: 100%;" width="130" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:10px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;">In the next six months, Ola plans to open 500 dark storefronts across 20 locations as part of an aggressive push for its rapid commerce service, Ola Dash. The move comes at a time when other platforms, like Swiggy and Zomato, are looking to expand their presence in this fast-growing market. Others, such as Dunzo, and Zepto, are beefing up their rapid delivery offerings as well. Ola's quick-commerce focus is part of the company's strategy to portray itself as a super app ahead of a projected IPO (IPO). The company recently borrowed $500 million in debt to support its newer businesses, such as fast commerce and a platform for used automobile transactions.</span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="button_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:10px;text-align:center;">
+																<div align="center">
+																	<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.livemint.com/companies/news/ola-parent-rebrands-quick-commerce-biz-as-ola-dash-11643392221273.html" style="height:19px;width:111px;v-text-anchor:middle;" arcsize="22%" stroke="false" fillcolor="#4f87ab"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:13px"><![endif]--><a href="https://www.livemint.com/companies/news/ola-parent-rebrands-quick-commerce-biz-as-ola-dash-11643392221273.html" target="_blank" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#4f87ab;border-radius:4px;width:auto;border-top:1px solid #4f87ab;border-right:1px solid #4f87ab;border-bottom:1px solid #4f87ab;border-left:1px solid #4f87ab;padding-top:0px;padding-bottom:0px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;"><span style="padding-left:20px;padding-right:20px;font-size:13px;display:inline-block;letter-spacing:normal;"><span style="font-size: 16px; margin: 0; line-height: 1.2; word-break: break-word; mso-line-height-alt: 19px;"><span style="font-size: 13px; line-height: 15px;" data-mce-style="font-size: 13px; line-height: 15px;">&nbsp;Read More&nbsp;</span></span></span></a>
+																	<!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-11" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 16.8px; color: #393d47; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center;"><span style="font-size:34px;color:#71369e;"><strong>KGP Section</strong></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-12" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;">
+																<div align="center" style="line-height:10px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqOyaCelaV5bBdODLV2-h0ghvWNYMKHSptg&usqp=CAU" style="display: block; height: auto; border: 0; width: 225px; max-width: 100%;" width="225"></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-13" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 25.2px; color: #393d47; line-height: 1.8; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 32.4px;"><span style="color:#000000;font-size:18px;"><strong>Skeps</strong></span></p>
+																		<p style="margin: 0; font-size: 14px; text-align: justify; mso-line-height-alt: 28.8px;"><span style="color:#000000;font-size:16px;">Skeps was founded by IIT Kharagpur grads Mayank Tewari and Prerit Srivastava, as well as Tushar Srivastava, an IIT Delhi alumni. The startup began as a blockchain marketplace where lenders could purchase and sell leads in a safe environment, while borrowers could keep confidentiality while looking for the suitable lender. Skeps here aspires to be the tech layer that connects banks, fintechs, and merchants in this expanding ecosystem. Skeps, which is backed by Bertelsmann India Investments and Accel, provides its technology stack to merchants and banks in order for them to surface Buy Now, Pay Later (BNPL) as part of the payments option rather than as a separate credit layer. <span style="color:#0e48b4;"><a href="https://yourstory.com/2022/01/product-roadmap-skeps-blockchain-bnpl-credit/amp" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">Read more here</a></span>&nbsp;</span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-14" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; text-align: center; mso-line-height-alt: 14.399999999999999px; color: #393d47; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0;"><span style="font-size:34px;color:#71369e;"><strong>Funding</strong></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-15" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;">
+																<div align="center" style="line-height:10px"><img src="data:image/jpeg;base64,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" style="display: block; height: auto; border: 0; width: 65px; max-width: 100%;" width="65" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:15px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;">The creator commerce platform, Social Swag, which is the brain-child of Akshay Kumar, Rana Daggubati, and Mahesh Bhupati has raised $3.5 million in a Pre-Series A funding round led by IMEF and Unicorn India Ventures. It offers multiple products including masterclasses, NFTs, live learning sessions and personal shoutouts from celebrities. <span style="color:#0e48b4;"><a href="https://inc42.com/buzz/akshay-kumar-and-rana-dagggubatis-creator-commerce-platform-social-swag-raises-funding/?itm_source=inc42-news-round&amp;itm_medium=website&amp;itm_campaign=news-round" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">Read More</a></span></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;">
+																<div align="center" style="line-height:10px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ZHaukIaXDtHfz12a8fdTlLNIcQFjB3rbIvarKRGuTpJqBVqt0ps0WgcyYMOrIovFUQM&usqp=CAU" style="display: block; height: auto; border: 0; width: 119px; max-width: 100%;" width="119" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:5px;padding-right:5px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; mso-line-height-alt: 21px;"><span style="font-size:14px;"><span style="color:#000000;">Ola Electric said on Monday it has raised $200 million in a new financing round.Tekne Private Ventures, Alpine Opportunity Fund and Edelweiss are among those that financed the new round, which values Ola Electric at $5 billion, up from $3 billion in September last year, the Bengaluru-headquartered startup said</span>. <span style="color:#0e48b4;"><a href="https://techcrunch.com/2022/01/23/ola-electric-valued-at-5-billion-in-new-funding/#:~:text=Tekne%20Private%20Ventures%2C%20Alpine%20Opportunity,the%20Bengaluru%2Dheadquartered%20startup%20said." target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">Read More</a></span></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="padding-bottom:5px;padding-top:20px;width:100%;padding-right:0px;padding-left:0px;">
+																<div align="center" style="line-height:10px"><img src="https://static.wixstatic.com/media/12d400_41d5b06efb434b059e042a0da9a2bb3b~mv2.png/v1/fill/w_314,h_90,al_c,q_85,usm_0.66_1.00_0.01/Logo%20(3).webp" style="display: block; height: auto; border: 0; width: 152px; max-width: 100%;" width="152" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;">This B2B platform for procurement of inventory by kirana stores, ShopKirana , which has rebranded to Direct, has announced raising $38 million in a Series C round of funding. The company will use the capital to expand to nearly 30 cities over the next year and a half. </span></p>
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;"><span style="color:#0e48b4;"><a href="https://yourstory.com/2022/01/funding-alert-shopkirana-raises-38-m-info-edge-oman-india-joint-investment-fund-sixth-sense-ventures/amp" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">Read More</a></span></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-16" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;">
+																<div align="center" style="line-height:10px"><img src="https://www.businessinsider.in/thumb/msid-89182864,width-700,resizemode-4,imgsize-14206/business/ecommerce/news/moglix-more-than-doubles-its-valuation-in-nine-months/moglix.jpg" style="display: block; height: auto; border: 0; width: 130px; max-width: 100%;" width="130" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;">Moglix has more than doubled its valuation to about $2.6 billion from $1 billion after raising $250 million as the Indian industrial business-to-business marketplace aggressively scales its offerings in many parts of the world. Founded by IIT Kanpur and ISB alumnus Rahul Garg, Moglix operates a B2B marketplace and procurement platform for manufacturing goods.<a href="https://techcrunch.com/2022/01/27/moglix-series-f/" style="color:#000000;"> </a></span></p>
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#0e48b4;"><a href="https://techcrunch.com/2022/01/27/moglix-series-f/" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">Read More</a></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="padding-bottom:5px;padding-top:15px;width:100%;padding-right:0px;padding-left:0px;">
+																<div align="center" style="line-height:10px"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/1200px-Swiggy_logo.svg.png" style="display: block; height: auto; border: 0; width: 163px; max-width: 100%;" width="163" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:5px;padding-right:5px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;">Swiggy has raised $700 million at $10.7 billion valuation just six months after raising $1.25 billion. Swiggy has surpassed the valuation of its 13-year-old chief rival Zomato, which went public last year.The new funding follows a strong year of growth for Swiggy in which the startup nearly doubled its food delivery business’ gross order value, it said. Instamart, Swiggy’s instant delivery service, became one of the major focus areas for Swiggy last year. <span style="color:#0e48b4;"><a href="https://techcrunch.com/2022/01/24/indian-food-delivery-giant-swiggy-raises-700-million-at-10-7-billion-valuation/" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">Read More</a></span></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:5px;">
+																<div align="center" style="line-height:10px"><img src="http://www.customercarephonenumber.in/wp-content/uploads/2017/01/logo-35.png" style="display: block; height: auto; border: 0; width: 173px; max-width: 100%;" width="173" alt="I'm an image" title="I'm an image"></div>
+															</td>
+														</tr>
+													</table>
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
+																		<p style="margin: 0; font-size: 14px; text-align: left;"><span style="color:#000000;">Smartron, a technology startup, said on Tuesday that it has signed an agreement with Global Emerging Markets Group (GEM), where it has secured $200 million. Smartron has created and launched a range of smart and intelligent devices, all of which are driven by its own native AIoT platform, tronX, and provide intelligent, personalised, and seamless experiences for the home, mobility, and health segments. <span style="color:#0e48b4;"><a href="https://economictimes.indiatimes.com/tech/funding/smartron-group-secures-up-to-200-million-capital-commitment-from-gem-group/articleshow/89115659.cms" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">Read More</a></span>.</span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-17" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 16.8px; color: #393d47; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center;"><span style="font-size:34px;color:#71369e;"><strong>SOMETHING INTERESTING</strong></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-18" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;">
+																<div align="center" style="line-height:10px"><img src="https://99signals.b-cdn.net/wp-content/uploads/2018/04/GV-Podcast-696x696.jpg" style="display: block; height: auto; border: 0; width: 260px; max-width: 100%;" width="260"></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-19" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 21px; color: #393d47; line-height: 1.5; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 24px;"><span style="color:#000000;font-size:16px;"><strong>The Garyvee Audio Experience</strong></span></p>
+																		<p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 21px;">&nbsp;</p>
+																		<p style="margin: 0; font-size: 14px; text-align: justify; mso-line-height-alt: 24px;"><span style="color:#000000;font-size:16px;">In this podcast, Gary Vee with Greg and Sahil talk about how to get into the NFT and Web 3.0 worlds, why NFTs fail, how he conducts his research, and takeaways from our most important life lessons.</span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-20" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td>
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 12px; mso-line-height-alt: 18px; color: #393d47; line-height: 1.5; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; mso-line-height-alt: 24px;"><span style="font-size:16px;color:#000000;"><strong>IF YOU HAVE MORE TIME:</strong></span></p>
+																		<ul style="line-height: 150%; font-size: 16px;">
+																			<li><span style="font-size:16px;color:#0e48b4;"><a href="https://yourstory.com/2022/01/budget-indias-fintech-sector/amp" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">What India’s fintech sector wants from the government</a></span></li>
+																			<li><span style="font-size:16px;color:#0e48b4;"><a href="https://yourstory.com/socialstory/2022/01/maximising-social-value-real-estate-sector/amp" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">In the real estate industry, maximising social value is crucial.</a></span></li>
+																		</ul>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-21" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="social_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="padding-left:10px;padding-right:10px;padding-top:10px;text-align:center;">
+																<table class="social-table" width="144px" border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																	<tr>
+																		<td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/ecell.iitkgp" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-blue/facebook@2x.png" width="32" height="32" alt="Facebook" title="facebook" style="display: block; height: auto; border: 0;"></a></td>
+																		<td style="padding:0 2px 0 2px;"><a href="https://twitter.com/ecelliitkgp?s=20" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-blue/twitter@2x.png" width="32" height="32" alt="Twitter" title="twitter" style="display: block; height: auto; border: 0;"></a></td>
+																		<td style="padding:0 2px 0 2px;"><a href="https://www.linkedin.com/company/ecellkgp/mycompany/" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-blue/linkedin@2x.png" width="32" height="32" alt="Linkedin" title="linkedin" style="display: block; height: auto; border: 0;"></a></td>
+																		<td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/ecellkgp/" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-blue/instagram@2x.png" width="32" height="32" alt="Instagram" title="instagram" style="display: block; height: auto; border: 0;"></a></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-22" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-left:10px;padding-right:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 16.8px; color: #393d47; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center;"><span style="font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0e48b4;"><a href="https://www.ecell-iitkgp.org/" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">E-Cell IIT KGP</a></span>&nbsp; &nbsp; |&nbsp;&nbsp;<span style="color:#0e48b4;"><a href="https://community.ecell-iitkgp.org/" target="_blank" style="text-decoration:none;color:#0e48b4;" rel="noopener">&nbsp;KGP Startup Community</a></span></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-23" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="button_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td style="padding-bottom:5px;padding-left:10px;padding-right:10px;padding-top:5px;text-align:center;">
+																<div align="center">
+																	<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.ecell-iitkgp.org/subscribe.php" style="height:44px;width:115px;v-text-anchor:middle;" arcsize="10%" strokeweight="0.75pt" strokecolor="#8a3b8f" fillcolor="#71369e"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:16px"><![endif]--><a href="https://www.ecell-iitkgp.org/subscribe.php" target="_blank" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#71369e;border-radius:4px;width:auto;border-top:1px solid #8a3b8f;border-right:1px solid #8a3b8f;border-bottom:1px solid #8a3b8f;border-left:1px solid #8a3b8f;padding-top:5px;padding-bottom:5px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;"><span style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;"><span style="font-size: 16px; line-height: 2; word-break: break-word; mso-line-height-alt: 32px;">Subscribe</span></span></a>
+																	<!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-24" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-left:10px;padding-right:10px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 16.8px; color: #393d47; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center;"><span style="font-size:12px;"><span style="color:#000000;">If you have feedback or suggestions please send a mail to</span><span style="color:#0e48b4;"><a href="mailto:%C2%A0vaishnav.lembhe@ecell-iitkgp.org" target="_blank" title="vaishnav.lembhe@ecell-iitkgp.org" rel="noopener" style="text-decoration:none;color:#0e48b4;">&nbsp;vaishnav.lembhe@ecell-iitkgp.org</a></span></span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-25" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f3ef; color: #000000; width: 650px;" width="650">
+										<tbody>
+											<tr>
+												<td class="column" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="text_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:5px;">
+																<div style="font-family: sans-serif">
+																	<div style="font-size: 14px; mso-line-height-alt: 16.8px; color: #393d47; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif;">
+																		<p style="margin: 0; font-size: 14px; text-align: center;"><span style="font-size:12px;color:#000000;">2021 © Entrepreneurship Cell, IIT Kharagpur</span></p>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table><!-- End -->
+</body>
+
+</html>
